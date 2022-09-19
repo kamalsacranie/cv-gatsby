@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@page {
+  size: A4 portrait; /* page size */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* setting up margins and general spacing */
+:root {
+  --page-width: 8.5in;
+  --pagedjs-margin-right: 0.7in;
+  --pagedjs-margin-left: 0.7in;
+  --pagedjs-margin-top: 0.5in;
+  --pagedjs-margin-bottom: 0.5in;
+  --root-font-size: 12pt;
+  --viewer-pages-spacing: 12px;
+  --viewer-shadow-color: #313131; /* this marks the pages */
+  --viewer-background-color: #ffd1b3; /* light sepia for the background */
+}
+
+/* Paged.js viewer */
+@media screen {
+  body {
+    background-color: var(--viewer-background-color);
+    margin: 0; /* for mobile */
+    width: calc(
+      var(--pagedjs-width) + 2 * var(--viewer-pages-spacing)
+    ); /* for mobile */
+  }
+  .pagedjs_pages {
+    max-width: var(--pagedjs-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .pagedjs_page {
+    box-shadow: 0 0 calc(0.66667 * var(--viewer-pages-spacing))
+      var(--viewer-shadow-color);
+    margin: var(--viewer-pages-spacing) 0;
+  }
+}
+@media screen and (min-width: 8.5in) {
+  /* not a mobile */
+  body {
+    margin: auto;
+    width: unset;
+  }
+}
+
+.email {
+  display: inline;
+}
