@@ -2,5 +2,23 @@
     "names": {
         "first_name": "Kamal",
         "last_name": "Sacranie"
+    },
+    "contact_details": {
+        "phone": {
+            "fa_icon": "fa-solid fa-phone",
+            "data": "+447951642005"
+        },
+        "github": {
+            "fa_icon": "fa-brands fa-github",
+            "data": "github.com/kamalsacranie"
+        },
+        "email": {
+            "fa_icon": "fa-solid fa-at",
+            "data": "sacranie.work@gmail.com"
+        },
+        "website": {
+            "fa_icon": "fa-solid fa-globe",
+            "data": "kamalsacranie.github.io"
+        }
     }
 }
