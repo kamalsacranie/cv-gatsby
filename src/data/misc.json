@@ -1,6 +1,0 @@
-{
-  "text_below_name": {
-    "code": true,
-    "text": "render_cv(*args, **kwargs)"
-  }
-}
