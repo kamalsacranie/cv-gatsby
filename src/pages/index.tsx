@@ -1,31 +1,38 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import "../styles/global.css";
+import ContactGrid from "../components/ContactGridComponent";
+import CVEntry from "../components/CVEntryComponent/CVEntryComponent";
 import { names } from "../data/personal";
 import { subheading } from "../data/misc";
-import ContactGrid from "../components/ContactGridComponent";
+import { experience } from "../data/cvEntries";
 
 const IndexPage = () => {
     return (
         <main>
-            <div>
-                {/* make into a component */}
-                <div className="grid grid-rows-2">
-                    {Object.values(names).map((name) => {
-                        return (
-                            <div className="text-white text-3xl font-extrabold">
-                                <span className="bg-black px-2">{name}</span>
-                            </div>
-                        );
-                    })}
+            <div className="flex flex-row justify-between">
+                <div className="shrink-0">
+                    {/* make into a component */}
+                    <div className="grid grid-rows-2 gap-3">
+                        {Object.values(names).map((name) => {
+                            return (
+                                <div className="text-white text-5xl font-extrabold">
+                                    <span className="bg-black px-3">{name}</span>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    {subheading.code ? (
+                        <code>{subheading.text}</code>
+                    ) : (
+                        <span>{subheading.text}</span>
+                    )}
                 </div>
-                {subheading.code ? (
-                    <code>{subheading.text}</code>
-                ) : (
-                    <span>{subheading.text}</span>
-                )}
+                <ContactGrid />
             </div>
-            <ContactGrid />
+            <div>
+                <CVEntry entry={experience.experience_1} />
+            </div>
         </main>
     );
 };

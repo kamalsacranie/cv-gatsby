@@ -20,7 +20,7 @@
   --root-font-size: 12pt;
   --viewer-pages-spacing: 12px;
   --viewer-shadow-color: #313131; /* this marks the pages */
-  --viewer-background-color: #ffd1b3; /* light sepia for the background */
+  --viewer-background-color: #eae6dd; /* light sepia for the background */
 }
 
 /* Paged.js viewer */

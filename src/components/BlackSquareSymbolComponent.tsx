@@ -4,10 +4,10 @@ import * as icons from "react-icons/vsc";
 // TODO make it dynamic for all the types of icons so we can import react-icons/vsc
 const BlackSquareSymbol = ({
     name,
-    extend_style,
+    extendStyle,
 }: PropsWithChildren<String>) => {
     return (
-        <div className={`bg-black text-white self-center p-2 ${extend_style}`}>
+        <div className={`bg-black text-white self-center p-2 ${extendStyle}`}>
             {icons[name] && React.createElement(icons[name])}
         </div>
     );

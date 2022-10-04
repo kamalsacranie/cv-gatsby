@@ -3,13 +3,13 @@ export const names = {
     last_name: "Sacranie",
 };
 
-export const contact_details = {
+export const contactDetails = {
     phone: {
         icon: "VscGithubInverted",
-        data: "+47951642005",
+        data: "+44951642005",
     },
     github: {
-        icon: "VscAt",
+        icon: "VscAdd",
         data: "github.com/kamalsacranie",
     },
     email: {
@@ -17,7 +17,7 @@ export const contact_details = {
         data: "sacranie.work@gmail.com",
     },
     website: {
-        icon: "VscAt",
+        icon: "VscAdd",
         data: "kamalsacranie.github.io",
     },
 };
