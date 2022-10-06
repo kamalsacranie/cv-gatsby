@@ -23,6 +23,10 @@
   --viewer-background-color: #eae6dd; /* light sepia for the background */
 }
 
+html {
+  font-size: 12px;
+}
+
 /* Paged.js viewer */
 @media screen {
   body {
