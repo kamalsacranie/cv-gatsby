@@ -2,22 +2,25 @@ import * as React from "react";
 import type { HeadFC } from "gatsby";
 import "../styles/global.css";
 import ContactGrid from "../components/ContactGridComponent";
-import CVEntry from "../components/CVEntryComponent/CVEntryComponent";
+import TextOnBg from "../components/TextOnBgComponent";
+import ExperienceEtnry from "../components/CVEntryComponent/ExperienceEntryComponent";
 import { names } from "../data/personal";
 import { subheading } from "../data/misc";
-import { experience } from "../data/cvEntries";
+import { education, experiences } from "../data/cvEntries";
+import EducationEntry from "../components/CVEntryComponent/EducationEntryComponent";
 
 const IndexPage = () => {
     return (
         <main>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row justify-between pb-2">
                 <div className="shrink-0">
-                    {/* make into a component */}
                     <div className="grid grid-rows-2 gap-3">
                         {Object.values(names).map((name) => {
                             return (
-                                <div className="text-white text-5xl font-extrabold">
-                                    <span className="bg-black px-3">{name}</span>
+                                <div className="flex">
+                                    <TextOnBg addClass="text-5xl font-extrabold px-3">
+                                        {name}
+                                    </TextOnBg>
                                 </div>
                             );
                         })}
@@ -31,7 +34,18 @@ const IndexPage = () => {
                 <ContactGrid />
             </div>
             <div>
-                <CVEntry entry={experience.experience_1} />
+                <TextOnBg addClass="capitalize">{Object.keys({ education })}</TextOnBg>
+                {Object.values(education).map((entry) => {
+                    return <EducationEntry entry={entry} />;
+                })}
+            </div>
+            <div>
+                <TextOnBg addClass="capitalize">
+                    {Object.keys({ experiences })}
+                </TextOnBg>
+                {Object.values(experiences).map((entry) => {
+                    return <ExperienceEtnry entry={entry} />;
+                })}
             </div>
         </main>
     );

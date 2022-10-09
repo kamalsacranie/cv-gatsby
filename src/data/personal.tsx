@@ -5,19 +5,23 @@ export const names = {
 
 export const contactDetails = {
     phone: {
-        icon: "VscGithubInverted",
+        icon: "AiFillPhone",
         data: "+44951642005",
     },
     github: {
-        icon: "VscAdd",
+        icon: "VscGithubInverted",
         data: "github.com/kamalsacranie",
     },
     email: {
-        icon: "VscBug",
+        icon: "HiAtSymbol",
         data: "sacranie.work@gmail.com",
     },
     website: {
-        icon: "VscAdd",
+        icon: "FaGlobe",
         data: "kamalsacranie.github.io",
+    },
+    linkedIn: {
+        icon: "RiLinkedinFill",
+        data: "https://www.linkedin.com/in/kamal-sacranie-3b49991b1/",
     },
 };
