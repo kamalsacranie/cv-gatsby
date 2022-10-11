@@ -4,10 +4,10 @@ import "../styles/global.css";
 import ContactGrid from "../components/ContactGridComponent";
 import TextOnBg from "../components/TextOnBgComponent";
 import ExperienceEtnry from "../components/CVEntryComponent/ExperienceEntryComponent";
+import EducationEntry from "../components/CVEntryComponent/EducationEntryComponent";
 import { names } from "../data/personal";
 import { subheading } from "../data/misc";
 import { education, experiences } from "../data/cvEntries";
-import EducationEntry from "../components/CVEntryComponent/EducationEntryComponent";
 
 const IndexPage = () => {
     return (
@@ -34,13 +34,15 @@ const IndexPage = () => {
                 <ContactGrid />
             </div>
             <div>
-                <TextOnBg addClass="capitalize">{Object.keys({ education })}</TextOnBg>
+                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
+                    {Object.keys({ education })}
+                </TextOnBg>
                 {Object.values(education).map((entry) => {
                     return <EducationEntry entry={entry} />;
                 })}
             </div>
             <div>
-                <TextOnBg addClass="capitalize">
+                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
                     {Object.keys({ experiences })}
                 </TextOnBg>
                 {Object.values(experiences).map((entry) => {
