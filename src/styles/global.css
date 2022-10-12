@@ -59,3 +59,8 @@ html {
 .email {
   display: inline;
 }
+
+/* Styling our links */
+a {
+  color: blue;
+}
