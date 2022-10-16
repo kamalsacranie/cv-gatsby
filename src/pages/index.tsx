@@ -12,9 +12,9 @@ import { education, experiences } from "../data/cvEntries";
 const IndexPage = () => {
     return (
         <main>
-            <div className="flex flex-row justify-between pb-2">
+            <div className="flex flex-row justify-between pb-6">
                 <div className="shrink-0">
-                    <div className="grid grid-rows-2 gap-3">
+                    <div className="grid grid-rows-2 gap-1">
                         {Object.values(names).map((name) => {
                             return (
                                 <div className="flex">
@@ -33,7 +33,7 @@ const IndexPage = () => {
                 </div>
                 <ContactGrid />
             </div>
-            <div>
+            <div className="pb-6">
                 <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
                     {Object.keys({ education })}
                 </TextOnBg>
@@ -41,7 +41,7 @@ const IndexPage = () => {
                     return <EducationEntry entry={entry} />;
                 })}
             </div>
-            <div>
+            <div className="pb-6">
                 <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
                     {Object.keys({ experiences })}
                 </TextOnBg>

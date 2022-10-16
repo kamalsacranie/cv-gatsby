@@ -10,8 +10,9 @@ interface MarkdownProps {
 }
 
 const Markdown = ({ source, className }: MarkdownProps) => {
+    className = className ? className : "";
     return (
-        <div className={className ? className : ""}>
+        <div className={className}>
             <ReactMarkdown
                 remarkPlugins={[gfm]}
         /* rehypePlugins={[rehypeRaw]} */ children={source}

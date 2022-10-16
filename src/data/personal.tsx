@@ -10,7 +10,7 @@ export const contactDetails = {
     },
     github: {
         icon: "VscGithubInverted",
-        data: "github.com/kamalsacranie",
+        data: "[GitHub](github.com/kamalsacranie)",
     },
     email: {
         icon: "HiAtSymbol",
@@ -18,10 +18,10 @@ export const contactDetails = {
     },
     website: {
         icon: "FaGlobe",
-        data: "kamalsacranie.github.io",
+        data: "[Website](kamalsacranie.github.io)",
     },
     linkedIn: {
         icon: "RiLinkedinFill",
-        data: "https://www.linkedin.com/in/kamal-sacranie-3b49991b1/",
+        data: "[LinkedIn](https://www.linkedin.com/in/kamal-sacranie-3b49991b1/)",
     },
 };

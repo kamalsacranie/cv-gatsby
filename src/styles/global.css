@@ -62,5 +62,5 @@ html {
 
 /* Styling our links */
 a {
-  color: blue;
+  @apply transition-all ease-in-out text-blue-600 hover:underline decoration-wavy;
 }
