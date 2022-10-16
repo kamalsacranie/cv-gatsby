@@ -49,6 +49,21 @@ const IndexPage = () => {
                     return <ExperienceEtnry entry={entry} />;
                 })}
             </div>
+            <div>
+                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
+                    <span>Achievements & noteable</span>
+                </TextOnBg>
+                <ul className="list-disc list-outside py-3">
+                    {Object.keys(achievableNoteworthy).map((entry) => {
+                        return (
+                            <li>
+                                <span>{entry}: </span>
+                                <span>{achievableNoteworthy[entry].body}</span>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </main>
     );
 };
