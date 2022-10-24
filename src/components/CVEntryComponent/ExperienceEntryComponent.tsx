@@ -7,11 +7,11 @@ interface ExperienceEntryProps {
             title: string;
             date: string;
             description: string;
+            skills: string;
         };
         main: {
             body: string;
             place: string;
-            skills: string;
         };
     };
 }
@@ -27,17 +27,16 @@ const ExperienceEtnry = ({ entry }: ExperienceEntryProps) => {
                     source={entry.brief.title}
                 />
                 <Markdown source={entry.brief.description} />
+                <div className="text-sm">
+                    <Markdown source={"`Skills: " + entry.brief.skills + "`"} />
+                </div>
             </div>
             <div className="col-span-5">
-                <div className="flex place-content-end justify-items-end">
+                <div className="flex justify-between">
+                    <Markdown source={entry.main.place} />
                     <Markdown source={entry.brief.date} />
                 </div>
                 <Markdown source={entry.main.body} />
-                <Markdown source={entry.main.place} />
-                <div className="flex">
-                    <code className="inline">Skills:&nbsp;</code>
-                    <Markdown className="inline" source={entry.main.skills} />
-                </div>
             </div>
         </div>
     );

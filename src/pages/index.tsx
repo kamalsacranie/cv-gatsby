@@ -1,5 +1,7 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 import "../styles/global.css";
 import ContactGrid from "../components/ContactGridComponent";
 import TextOnBg from "../components/TextOnBgComponent";
@@ -7,7 +9,11 @@ import ExperienceEtnry from "../components/CVEntryComponent/ExperienceEntryCompo
 import EducationEntry from "../components/CVEntryComponent/EducationEntryComponent";
 import { names } from "../data/personal";
 import { subheading } from "../data/misc";
-import { education, experiences } from "../data/cvEntries";
+import {
+    education,
+    experiences,
+    achievableNoteworthy,
+} from "../data/cvEntries";
 
 const IndexPage = () => {
     return (
@@ -18,7 +24,7 @@ const IndexPage = () => {
                         {Object.values(names).map((name) => {
                             return (
                                 <div className="flex">
-                                    <TextOnBg addClass="text-5xl font-extrabold px-3">
+                                    <TextOnBg addClass="text-3xl font-extrabold px-3">
                                         {name}
                                     </TextOnBg>
                                 </div>
@@ -34,7 +40,7 @@ const IndexPage = () => {
                 <ContactGrid />
             </div>
             <div className="pb-6">
-                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
+                <TextOnBg addClass="font-extrabold capitalize px-2">
                     {Object.keys({ education })}
                 </TextOnBg>
                 {Object.values(education).map((entry) => {
@@ -42,7 +48,7 @@ const IndexPage = () => {
                 })}
             </div>
             <div className="pb-6">
-                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
+                <TextOnBg addClass="font-extrabold capitalize px-2">
                     {Object.keys({ experiences })}
                 </TextOnBg>
                 {Object.values(experiences).map((entry) => {
@@ -50,15 +56,16 @@ const IndexPage = () => {
                 })}
             </div>
             <div>
-                <TextOnBg addClass="text-3xl font-extrabold capitalize px-2">
+                <TextOnBg addClass="font-extrabold capitalize px-2">
                     <span>Achievements & noteable</span>
                 </TextOnBg>
-                <ul className="list-disc list-outside py-3">
+                <ul>
                     {Object.keys(achievableNoteworthy).map((entry) => {
                         return (
                             <li>
-                                <span>{entry}: </span>
-                                <span>{achievableNoteworthy[entry].body}</span>
+                                <ReactMarkdown remarkPlugins={[gfm]}>
+                                    {entry + ": " + achievableNoteworthy[entry].body}
+                                </ReactMarkdown>
                             </li>
                         );
                     })}

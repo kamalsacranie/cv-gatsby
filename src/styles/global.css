@@ -13,8 +13,8 @@
 /* setting up margins and general spacing */
 :root {
   --page-width: 8.5in;
-  --pagedjs-margin-right: 0.7in;
-  --pagedjs-margin-left: 0.7in;
+  --pagedjs-margin-right: 0.5in;
+  --pagedjs-margin-left: 0.5in;
   --pagedjs-margin-top: 0.5in;
   --pagedjs-margin-bottom: 0.5in;
   --root-font-size: 12pt;
@@ -63,4 +63,8 @@ html {
 /* Styling our links */
 a {
   @apply transition-all ease-in-out text-blue-600 hover:underline decoration-wavy;
+}
+
+ul {
+  @apply list-disc list-outside ml-5;
 }
