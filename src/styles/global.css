@@ -13,10 +13,10 @@
 /* setting up margins and general spacing */
 :root {
   --page-width: 8.5in;
-  --pagedjs-margin-right: 0.5in;
-  --pagedjs-margin-left: 0.5in;
-  --pagedjs-margin-top: 0.5in;
-  --pagedjs-margin-bottom: 0.5in;
+  --pagedjs-margin-right: 0.23in;
+  --pagedjs-margin-left: 0.23in;
+  --pagedjs-margin-top: 0.2in;
+  --pagedjs-margin-bottom: 0.2in;
   --root-font-size: 12pt;
   --viewer-pages-spacing: 12px;
   --viewer-shadow-color: #313131; /* this marks the pages */

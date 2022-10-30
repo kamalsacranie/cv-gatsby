@@ -6,7 +6,7 @@ import Markdown from "./MarkdownComponent";
 const ContactGrid = () => {
     return (
         <div>
-            <div className="grid grid-cols-3 gap-2 text-xs">
+            <div className="grid grid-cols-3 gap-2 text-sm">
                 {Object.values(contactDetails).map(({ data, icon }) => {
                     return (
                         <div className="flex align-middle">

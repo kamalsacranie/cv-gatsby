@@ -57,7 +57,7 @@ const IndexPage = () => {
             </div>
             <div>
                 <TextOnBg addClass="font-extrabold capitalize px-2">
-                    <span>Achievements & noteable</span>
+                    <span>Relevant & noteble</span>
                 </TextOnBg>
                 <ul>
                     {Object.keys(achievableNoteworthy).map((entry) => {
