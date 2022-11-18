@@ -1,54 +1,21 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# My Résumé
 
-## 🚀 Quick start
+Creating and maintaining one's CV is a task where happiness and satisfaction is
+in paucity. This repository is my attempt to imbue some enjoyment into this
+lacuna of happiness.
 
-1.  **Create a Gatsby site.**
+Gone is the squalid era of trying to propitiate one's prospective employer by
+gesticulating over a rancid, vesuvian Word Document which purported to contain
+your résumé. You may counter with `latex` as a solution to my quandary and...
+you'd be wrong. Whilst `latex` is undoubtedly the typesetting champion where
+`pdf`s are concerned, the eyes tire at the sight of such a cumbersome language
+--- it is trivially easy to get hypnotised by such curvaceous parentheses. Your
+great granddad's favourite typesetting language also lack to programmatic
+positives promptly require to rapidly iterate on one's CV^[ No doubt rapid
+iteration may be required upon receiving rejection after rejection.] Personally,
+I'd much rather manage this `gatsby` project which is far more functional and
+data driven.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Please have a poke around but don't look at my commits. I will have likely
+gotten indignantly slobbish because not matter how easy you make it to update
+you CV, you will still detest updating it.
