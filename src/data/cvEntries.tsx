@@ -15,9 +15,9 @@ export const experiences = {
     "RSM UK": {
         brief: {
             title: "**Analysit in Capital Markets**",
-            date: "***2022 &ndash;***",
+            date: "***from 2022***",
             description:
-                "*Current role. Client-facing analyst in Capital Markets at RSM*",
+                "*Current role. Client-facing analyst in Capital Markets at RSM.*",
             skills: "Systematic data analysis, IFRS application",
         },
         main: {
@@ -68,12 +68,12 @@ export const experiences = {
             title: "**Algo-trading LSE competition**",
             date: "***2021 &ndash; 2022***",
             description:
-                "*2nd place in algo-trading competition through LSE and Optiver*",
+                "*2nd place in algo-trading competition through LSE and Optiver.*",
             skills: "Project & team management, multi-threaded programming",
         },
         main: {
             body: `
-- Lead a team in the LSE algo-trading competition coming 2nd overall.
+- Lead a team in the LSE algo-trading competition coming 2<sup>nd</sup> overall.
 - Created a multithreaded, object-oriented \`python\` app which listened for updates on a paper exchange and implemented a hedging algorithm to profit from pairs trading.
 - Received feedback that my code practice was exemplary for a self-taught programmer.
 `,
@@ -111,7 +111,7 @@ export const achievableNoteworthy = {
         body: "Advanced `neovim` configuration in `lua` yielding the most productive IDE I've used",
     },
     Music: {
-        body: "Have Grade 8 violin and a diploma in Voice with distinction.",
+        body: "Grade 8 violin and a diploma in Voice with distinction.",
     },
     "Asset management experience": {
         body: "Two week internship at Cadiz Asset Management",
@@ -120,6 +120,6 @@ export const achievableNoteworthy = {
         body: "Completed Gold President's Award in South Africa including 72 hours of volunteering.",
     },
     "Interesting facts about me": {
-        body: "Been to Eeverest Basecamp; Enjoy cooking, binding my own books, bouldering, and hiking.",
+        body: "Been to Eeverest Basecamp. Enjoy cooking, binding my own books, bouldering, and hiking.",
     },
 };

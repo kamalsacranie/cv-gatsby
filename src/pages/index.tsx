@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { HeadFC } from "gatsby";
+import { HeadFC, withPrefix, Link } from "gatsby";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import "../styles/global.css";
@@ -82,6 +82,7 @@ export const Head: HeadFC = () => {
     return (
         <>
             <title>Kamal Sacranie | Résumé</title>
+            {/* Cannot for the life of me figure out how to use this script form a local file */}
             <script
                 src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"
                 type="text/javascript"

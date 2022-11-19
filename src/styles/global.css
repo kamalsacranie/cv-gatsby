@@ -1,9 +1,11 @@
+/* Tailwind boilerplate */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Adjusting page size for paged.js */
 @page {
-  size: A4 portrait; /* page size */
+  size: A4 portrait;
 }
 
 * {
@@ -60,7 +62,7 @@ html {
   display: inline;
 }
 
-/* Styling our links */
+/* Styling our links using tailwind */
 a {
   @apply transition-all ease-in-out text-blue-600 hover:underline decoration-wavy;
 }
