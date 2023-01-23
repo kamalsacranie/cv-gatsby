@@ -40,7 +40,7 @@ const IndexPage = () => {
                 <ContactGrid />
             </div>
             <div className="pb-6">
-                <TextOnBg addClass="font-extrabold capitalize px-2">
+                <TextOnBg addClass="font-extrabold capitalize px-2 text-xl">
                     {Object.keys({ education })}
                 </TextOnBg>
                 {Object.values(education).map((entry) => {
@@ -48,7 +48,7 @@ const IndexPage = () => {
                 })}
             </div>
             <div className="pb-6">
-                <TextOnBg addClass="font-extrabold capitalize px-2">
+                <TextOnBg addClass="font-extrabold capitalize px-2 text-xl">
                     {Object.keys({ experiences })}
                 </TextOnBg>
                 {Object.values(experiences).map((entry) => {
@@ -56,8 +56,8 @@ const IndexPage = () => {
                 })}
             </div>
             <div>
-                <TextOnBg addClass="font-extrabold capitalize px-2">
-                    <span>Relevant & noteble</span>
+                <TextOnBg addClass="font-extrabold capitalize px-2 text-xl">
+                    <span>Relevant & notable</span>
                 </TextOnBg>
                 <ul>
                     {Object.keys(achievableNoteworthy).map((entry) => {

@@ -24,8 +24,9 @@ export const experiences = {
             place: "**RSM UK**",
             body: `
 - Graduate role in a small team resulting in substantial responsibility and ownership of work.
-- Automated the processing in General Ledgers using \`VBA\` saving 15 minutes for every process. Received specific thanks through the RSM coworker recognition scheme.
-- Studying for the ACA in tandem. Requires balancing work and studying using exceptional time-management skills.
+- Responsible for automating excel pipelines using \`VBA\`. Received specific thanks through the RSM coworker recognition scheme for my contributions.
+- Process and visualise client data using Alteryx and PowerBI
+- Studying for the ACA in tandem. Balancing work and studying requires exceptional time-management skills.
 `,
         },
     },
@@ -51,14 +52,14 @@ export const experiences = {
             title: "**Coding tutor**",
             date: "***2021 &ndash; 2022***",
             description:
-                "Tutored `python`, `SQL`, and `javascript` to A-level students.",
+                "*Tutored `python`, `SQL`, and `javascript` to A-level students.*",
             skills: "succinct & clear explanation, people management",
         },
         main: {
             body: `
-- The student studying the most difficult content increased predicted grade from B to A* through the course of tuition.
+- Mostly A-level Computer Science students. Most recent pupil increased predicted grade from B to A* through the course of tuition.
 - Received feedback from both pupils and parents that explanations provided far more clarity than tutors used in the past.
-- Developed soft skills which have proven essential in the workplace for communication.
+- Developed soft skills which have proven essential in the workplace for communication and explanation.
 `,
             place: "**Athena Tuition**",
         },
@@ -91,8 +92,8 @@ export const experiences = {
         },
         main: {
             body: `
-- Optionally enrolled in Machine Learning statistics course at LSE containing content on support-vector machines, and linear and non-linear methods. Course director said I was an "exemplary student" for the initiative I showed.
-- Used \`sci-kit learn\` with KNN, linear regression, and logistic regression to create a stock picker-based. Beat market index over 3 days using Alpaca API.
+- Optionally enrolled in Machine Learning statistics course at LSE containing content on support-vector machines, and linear and non-linear methods. Course director said I showed a unique motivation for programming.
+- Used \`sci-kit learn\` with KNN, linear regression, and logistic regression to create a stock picker. Beat market index over 3 days using Alpaca API.
 - Used natural language processing, SQL, and web scraping to scrape Reddit to identify sentiment around stock tickers.
 `,
         },
@@ -104,22 +105,22 @@ export const achievableNoteworthy = {
         body: "Social Secretary for LSE boxing two years running, organised a tour to Budapest",
     },
     "Sponsorship director for the LSESU Accounting Society": {
-        body: "engineered sponsorship deal with Accenture for the accounting society by pitching our society.",
+        body: "orchestrated sponsorship deal with Accenture for the accounting society",
     },
     "`Neovim` passion and [config](https://github.com/kamalsacranie/nvim-config)":
     {
         body: "Advanced `neovim` configuration in `lua` yielding the most productive IDE I've used",
     },
     Music: {
-        body: "Grade 8 violin and a diploma in Voice with distinction.",
+        body: "Grade 8 violin and a diploma in Voice with distinction",
     },
     "Asset management experience": {
         body: "Two week internship at Cadiz Asset Management",
     },
     "Presidents award (DoE equivalent)": {
-        body: "Completed Gold President's Award in South Africa including 72 hours of volunteering.",
+        body: "Completed Gold President's Award in South Africa including 72 hours of volunteering",
     },
     "Interesting facts about me": {
-        body: "Been to Eeverest Basecamp. Enjoy cooking, binding my own books, bouldering, and hiking.",
+        body: "Been to Eeverest Basecamp. Enjoy cooking, binding my own books, bouldering, and hiking",
     },
 };
